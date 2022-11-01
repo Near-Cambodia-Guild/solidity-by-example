@@ -48,5 +48,12 @@ contract Function {
 contract XYZ {
     function someFuncWithManyInput (uint x, uint y, uint z, address a, bool b, string memory c) public pure returns (uint) {}
 
+    function callFunc() external pure returns (uint) {
+        return someFuncWithManyInput(1, 2, 3, address(0), true, "C");
+    }
+
+    function callFuncWithKeyValue() external pure returns (uint) {
+        return someFuncWithManyInput({a: address(0), b: true, c: "c", x: 1, y: 2, z: 3});
+    }
     
 }
