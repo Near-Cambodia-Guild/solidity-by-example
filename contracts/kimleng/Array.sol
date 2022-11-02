@@ -2,7 +2,7 @@
 pragma solidity ^0.8.13;
 
 contract Array {
-    uint[] public arr; 
+    uint[] public arr;
     uint[] public arr2 = [1, 2, 3];
 
     uint [10] public myFixedSizeArr;
@@ -11,8 +11,8 @@ contract Array {
         return arr[i];
     }
 
-    function getArr(uint i) public {
-        arr.push(i);
+    function getArr() public view returns (uint[] memory) {
+        return arr;
     }
 
     function pop() public {
@@ -23,11 +23,11 @@ contract Array {
         return arr.length;
     }
 
-    function remove(uint index) public {
+    function remove (uint index) public {
         delete arr[index];
     }
-
-    function examples () external {
+    
+    function examples() external pure {
         uint[] memory a = new uint[](5);
     }
 }
