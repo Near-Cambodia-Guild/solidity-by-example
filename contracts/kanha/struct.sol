@@ -46,3 +46,34 @@ contract Todos {
     }
 }
 
+contract Structs{
+
+    struct Car{
+        
+    string model;
+    uint year;
+    address owner;
+}
+Car public car;
+
+Car[] public cars;
+
+mapping (address=>Car[])public carByOwner;
+
+function examples()external{
+
+  Car memory toyata =Car({year : 2000 , model:"Toyata" , owner: msg.sender});
+  Car memory lambo = Car ({year:1999 , model:"lambogini", owner: msg.sender});
+
+  cars.push(toyata);
+  cars.push(lambo);
+
+cars.push (Car("ferrari",2020,msg.sender));
+    Car memory _car=cars[0];
+    _car.year;
+
+  }    
+}
+
+
+
