@@ -6,13 +6,15 @@ contract Variables {
     string public text  = "Hello";
     uint public num = 123;
 
-    function doSomething() public {
+    function doSomething() public view returns(uint, uint, address){
         // Local variables are stored on the blockchain
         uint i = 456;
 
         // Here are some global variables
         uint timestamp = block.timestamp;
         address sender = msg.sender;
+
+        return (i, timestamp, sender);
     }
 }
 

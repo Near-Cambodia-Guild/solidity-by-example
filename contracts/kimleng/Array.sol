@@ -29,5 +29,6 @@ contract Array {
     
     function examples() external pure {
         uint[] memory a = new uint[](5);
+
     }
 }
