@@ -2,7 +2,7 @@
 pragma solidity ^0.8.17;
 
 
-contract myArray{
+contract myArray {
 
     uint [] public uintArray= [1,2,3,4];
     string [] public stringArray=['cat','dog','apple'];
@@ -12,21 +12,18 @@ contract myArray{
 
     function addCount()public view returns(uint){
 
-            return values.length;
-
+        return values.length;
     } 
 
     function addValues(string memory _values)public {
 
         values.push(_values);
-
-
     }
 
 
 }
 
-    contract ArrayRemoveBYshifting{
+    contract ArrayRemoveBYshifting {
         uint []public arr;
 
         //[1,2,3,4]--remove(1)-->[1,3,4,4] if you don't let it to show the shift use arr.pop-->[1,3,4]
@@ -63,7 +60,6 @@ contract myArray{
         assert(arr.length==0);
         
         }
-
         
     }
 

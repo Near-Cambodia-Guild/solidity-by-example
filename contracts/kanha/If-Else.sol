@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
-contract IfElse{
+contract IfElse {
 
     function foo(uint x)public pure returns( uint ){
 
@@ -11,8 +11,6 @@ contract IfElse{
         }else if (x<20 ){
 
             return 1;
-
-
         }
         else{
 

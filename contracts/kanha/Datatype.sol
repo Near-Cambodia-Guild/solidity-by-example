@@ -12,7 +12,6 @@ contract Primitives {
     uint public u256=456;
     uint public u =123;
 
-
     int8 public i8 = -1;
     int public i256=456;
     int public i=-123;

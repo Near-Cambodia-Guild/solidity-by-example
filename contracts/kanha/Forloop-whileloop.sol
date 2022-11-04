@@ -1,33 +1,23 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
-contract forLoopWhileLoop{
+contract forLoopWhileLoop {
 
-    function loop () external pure  {
+    function loop() external pure {
 
         for (uint i=0;i<10 ;i++){
-
-        if (i==3){
-
-            continue ;
-
+            if (i==3){
+                continue ;
+            }
+            if (i==5){
+                break;
+            }
         }
-        if (i==5){
+        uint j;
 
-            break;
-        }
-            
-            
-         }
-              uint j;
      while (j<10) {
-
         j++;
-
-        
      }
-
-
     }
 
     function sum(uint _n)external pure returns(uint ){
