@@ -26,15 +26,12 @@ contract Datalocation{
 
             _internal(y);
 
-    
-    uint[] memory memArr = new uint[](3);
+  uint[] memory memArr = new uint[](3);
     memArr [0]=234;
     return memArr;
 
-
 }
-
-function _internal (uint[]calldata y)private pure  {
+    function _internal (uint[]calldata y)private pure  {
   
 }
 

@@ -10,7 +10,6 @@ contract Gas{
         while(true) {
 
             i +=1;
-
             
         }
     }
