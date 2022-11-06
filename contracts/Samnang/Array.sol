@@ -38,7 +38,7 @@ contract Array{
     
     function examples() external {
         nums.push(4); // [1,2,3,4]
-        uint x = nums [1];
+        // uint x = nums [1];
         nums[2] = 777; // [1,2,777,4]
         delete nums[1]; // [1,0,777,4]
         nums.pop();//[1,0,777]
