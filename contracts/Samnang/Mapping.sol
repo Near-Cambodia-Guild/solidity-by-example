@@ -43,4 +43,4 @@
         function remove(address _addr1, uint _i) public {
             delete nested[_addr1][_i];
         }
-    }
+    }   
