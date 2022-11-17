@@ -3,7 +3,7 @@
     pragma solidity ^0.8.9; 
 
 
-    contract Counter {
+    contract Counter { 
         uint public count;
 
         // Function to get the current count

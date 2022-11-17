@@ -9,7 +9,7 @@ contract Error {
     function testRequire(uint _i) public pure {
         require(_i <= 10 , "i >10");
     }
-    function testRevert(uint _i) public pure{
+    function testRevert(uint _i) public pure {
         if(_i > 10 ){
             revert("i>10");
         }
@@ -28,7 +28,7 @@ contract Error {
     }
     error MyError(address caller, uint i);
 
-    function testCustomError(uint _i) public view{
+    function testCustomError(uint _i) public view {
         // require(_i <= 10 ,"Very long error message error error error");
         if (_i > 10) {
            revert MyError(msg.sender, _i);

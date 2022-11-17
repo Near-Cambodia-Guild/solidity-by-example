@@ -40,8 +40,9 @@ contract VisibilityBase {
 }
 
 contract VisibilityChild is VisibilityBase {
-    function examples2() external view {
+    function examples2() external view{
         y + z ;
+        
         internalFunc();
         publicFunc();
     }

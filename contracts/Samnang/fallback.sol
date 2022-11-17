@@ -8,8 +8,8 @@
             emit Log("fallback",msg.sender,msg.value,msg.data);
         }
 
-        receive () external payable {
+        receive() external payable {
              emit Log("receive",msg.sender,msg.value,"");
 
         }
-    }
+  }

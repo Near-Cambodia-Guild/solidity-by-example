@@ -2,7 +2,9 @@
     pragma solidity ^0.8.9; 
 
     contract Mapping {
+
         // Mapping from address to uint
+
         mapping(address => uint) public myMap;
 
         function get(address _addr) public view returns (uint) {
@@ -37,10 +39,14 @@
             uint _i,
             bool _boo
         ) public {
+
             nested[_addr1][_i] = _boo;
+
         }
 
         function remove(address _addr1, uint _i) public {
+            
             delete nested[_addr1][_i];
+            
         }
     }   

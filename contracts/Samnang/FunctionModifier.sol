@@ -13,14 +13,13 @@ pragma solidity ^0.8.9;
 //     }
 
 //     modifier whenNotPaused(){
-//         require(!paused,"paused");
-//         ;    
+//         require(!paused,"paused"); 
 //     }
 
-//     function inc() external whenNotPaused {
+//     function inc() external whenNotPaused{
 //         count += 1;
 //     }
-//     function dec () external whenNotPaused {
+//     function dec () external whenNotPaused{
 //         count -= 1;
 //     }
 //     modifier cap(uint _x){
@@ -32,12 +31,12 @@ pragma solidity ^0.8.9;
 //         count += _x;
 //     }
 
-//     modifier sandwich () {
+//     modifier sandwich (){
 //         count +=10;
 //         count *= 2;
 //     }
 
-//     function foo() external sandwich {
+//     function foo() external sandwich{
 //         count += 1;
 //     }
 

@@ -12,11 +12,11 @@ contract ViewandPrueFunction{
     //     return 1;
     // }
 
-    function addToNum(uint x) external view returns (uint) {
+    function addToNum(uint x) external view returns (uint){
         return x + num ;
     }
 
     function add(uint x, uint y) external pure returns (uint){
-        return x+y;
+        return x + y ;
     }
 }
