@@ -1,5 +1,5 @@
-  // SPDX-License-Identifier: UNLICENSED
-    pragma solidity ^0.8.9; 
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.9; 
 
     // 3 ways to send Eth
     // transfer - 2300 gas, reverts
@@ -7,11 +7,12 @@
     // call - all gas, returns bool and data
 
 contract SendEther{
+
     constructor () payable {}
 
     receive () external payable {}
 
-    function sendViaTransfer(address payable _to) external payable{
+    function sendViaTransfer(address payable _to) external payable {
         _to.transfer(123);
     }
     function sendVaiSend(address payable _to) external payable {
@@ -32,7 +33,6 @@ contract EthReceiver {
 
     receive() external payable {
         emit Log(msg.value, gasleft());
+        
     }
-
-
 }

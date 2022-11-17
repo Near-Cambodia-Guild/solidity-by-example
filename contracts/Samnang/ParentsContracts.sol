@@ -1,5 +1,5 @@
-  // SPDX-License-Identifier: UNLICENSED
-    pragma solidity ^0.8.9; 
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.9; 
     /* Inheritance tree
    A
  /  \
@@ -25,7 +25,7 @@ contract F is E {
         emit Log("F.foo");
     }
 
-    function bar () public virtual override{
+    function bar () public virtual override {
         emit Log("F.bar");
     }
 }

@@ -1,7 +1,6 @@
   // SPDX-License-Identifier: UNLICENSED
     pragma solidity ^0.8.9; 
 
-
 // contract TestCall {
 //     string public message;
 //     uint public x;
@@ -36,7 +35,7 @@ contract Caller {
     // contract Receiver, but we do know the address of contract Receiver and the function to call.
     function testCallFoo(address payable _addr) public payable {
         // You can send ether and specify a custom gas amount
-        (bool success, bytes memory data) = _addr.call{value: msg.value, gas: 5000}(
+        (bool success, bytes memory data) = _addr.call{ value: msg.value, gas: 5000 }(
             abi.encodeWithSignature("foo(string,uint256)", "call foo", 123)
         );
 

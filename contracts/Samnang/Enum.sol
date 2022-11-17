@@ -2,7 +2,7 @@
     pragma solidity ^0.8.9; 
 
 contract Enum {
-    enum Status {
+    enum Status{
         None,
         Pending,
         Shipped,

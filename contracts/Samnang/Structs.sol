@@ -1,7 +1,8 @@
   // SPDX-License-Identifier: UNLICENSED
-    pragma solidity ^0.8.9; 
+ pragma solidity ^0.8.9; 
 
-    contract Structs{
+ contract Structs{
+
     struct Car {
         string model;
         uint year;
@@ -12,7 +13,7 @@
     Car[] public cars;
     mapping(address => Car[]) public carsByOwner;
 
-    function examples() external {
+    function examples() external{
         Car memory toyota = Car("Toyota",1990,msg.sender);
         Car memory lambo = Car({year: 1980, model:"Lamborghini",owner: msg.sender});
         Car memory tesla;
