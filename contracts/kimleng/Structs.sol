@@ -36,22 +36,3 @@ contract Todos {
         todo.completed = !todo.completed;
     }
 }
-
-
-
-
-// pragma solidity ^0.8.13;
-
-// struct Todo {
-//     string text;
-//     bool completed;
-// }
-
-
-
-// pragma solidity ^0.8.13;
-// import "./StructDeclaration.sol";
-
-// contract Todos {
-//     Todo[] public todos;
-// }
