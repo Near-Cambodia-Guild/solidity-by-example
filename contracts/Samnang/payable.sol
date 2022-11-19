@@ -47,7 +47,7 @@ contract Payable {
 
             (bool success, ) =owner.call{value: amout}("");
             require(success, "Falied to send Ether");
-            
+
         }
 
         //Function to transfer Ether from this contract to address from input 
