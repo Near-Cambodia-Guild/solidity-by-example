@@ -6,7 +6,7 @@ pragma solidity ^0.8.9;
     // send - 2300 gas , returns bool
     // call - all gas, returns bool and data
 
-contract SendEther{
+contract SendEther {
 
     constructor () payable {}
 
